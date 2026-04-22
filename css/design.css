@@ -1,0 +1,80 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navbar{
+    background: #333;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+.menu a {
+    text-decoration: none;
+    color: white;
+}
+.menu a:hover{
+    text-decoration: underline;
+    color: black;
+    animation-duration: 5s;
+}
+.menu{
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+}
+
+@media (max-width: 768px){
+    .navbar{
+        flex-direction: column;
+
+    }
+    .menu{
+        margin-top: 20px;
+        flex-direction: column;
+    }
+    .menu a{
+        border-bottom: 1px solid white;
+    }
+}
+@media (max-width: 1024px){
+    body{
+        background-color: white ;
+    }
+}
+
+@media (max-width: 768px){
+    body{
+        background-color: white ;
+    }
+}
+
+
+@media (max-width: 475px){
+    body{
+        background-color: gray  ;
+    }
+}
+
+.welcome {
+    display: flex;
+    height: 100vh;
+}
+.image {
+    flex: 1;
+}
+.image img {
+    height: 100vh;
+    width: auto;
+    object-fit: cover;
+    border-radius: 0;
+    border: none;
+}
+.portfolio {
+    padding-right: 250px;
+    padding-top: 150px;
+}
